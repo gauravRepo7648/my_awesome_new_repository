@@ -6,20 +6,16 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.inetBankingV1.genelicLib.WebDriverUtility;
-
 public class LogoutPage {
 	//WebDriver driver;
-	public WebDriverUtility webUtility=new WebDriverUtility();
+	public genelicLib.WebDriverUtility webUtility=new genelicLib.WebDriverUtility();
 	public LogoutPage(WebDriver driver)
 	{
 		//this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	
-	@FindBy(xpath="//a[text()='Log out']")
-	@CacheLookup
-	private WebElement logout;
+	@FindBy(xpath="//a[text()='Log out']") private WebElement logout;
 	
 	public WebElement getLogout()
 	{

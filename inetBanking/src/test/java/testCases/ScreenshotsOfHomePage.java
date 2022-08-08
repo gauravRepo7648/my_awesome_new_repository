@@ -1,4 +1,4 @@
-package com.inetBankingV1.testCases;
+package testCases;
 
 import java.io.File;
 import java.io.IOException;
@@ -8,7 +8,11 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.annotations.Test;
 
-import com.inetBankingV1.genelicLib.BaseClassUtility;
+import genelicLib.BaseClassUtility;
+	/*
+	 * @Author - Gaurav Kumar Singh
+	 * TC : Take a screenShot of HomePage
+	 */
 
 public class ScreenshotsOfHomePage extends BaseClassUtility {
 	@Test

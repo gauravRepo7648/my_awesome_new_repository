@@ -1,4 +1,4 @@
-package com.inetBankingV1.genelicLib;
+package genelicLib;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;

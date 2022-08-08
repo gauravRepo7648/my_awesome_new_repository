@@ -1,4 +1,4 @@
-package com.inetBankingV1.genelicLib;
+package genelicLib;
 
 public class JavaUtility {
 
