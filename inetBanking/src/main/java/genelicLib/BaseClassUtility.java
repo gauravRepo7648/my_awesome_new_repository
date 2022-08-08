@@ -15,7 +15,7 @@ import com.inetBankingV1.pageObjects.LogoutPage;
 public class BaseClassUtility {
 	public WebDriver driver;
 	public FileUtility fu=new FileUtility();
-	public LogoutPage lp=new LogoutPage(driver);
+	public pageObjects.LoginPage lp=new pageObjects.LoginPage(driver);
 	
 	@BeforeClass
 	public void launchBrowser() throws Throwable
