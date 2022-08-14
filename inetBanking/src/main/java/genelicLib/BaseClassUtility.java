@@ -16,8 +16,6 @@ import pageObjects.LogoutPage;
 public class BaseClassUtility {
 	public WebDriver driver;
 	public FileUtility fileData=new FileUtility();
-	public LoginPage login=new LoginPage(driver);
-	public LogoutPage logout=new LogoutPage(driver);
 	
 	@BeforeClass
 	public void launchBrowser() throws Throwable
@@ -45,6 +43,7 @@ public class BaseClassUtility {
 	public void loginApplication() throws Throwable
 	{
 		driver.get(fileData.getPropertyKeyValue("url"));
+		LoginPage login=new LoginPage(driver);
 		login.loginToapplication(fileData.getPropertyKeyValue("userID"), fileData.getPropertyKeyValue("password"));
 	}
 	
@@ -52,6 +51,7 @@ public class BaseClassUtility {
 	public void logoutApplication()
 	{
 		Reporter.log("logout functionality start",true);
+		LogoutPage logout=new LogoutPage(driver);
 		logout.logout();
 		Reporter.log("logout sucessfully",true);
 	}
