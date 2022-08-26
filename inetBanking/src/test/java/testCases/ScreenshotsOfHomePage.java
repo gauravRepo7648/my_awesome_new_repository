@@ -23,5 +23,11 @@ public class ScreenshotsOfHomePage extends BaseClassUtility {
 		File trg=new File("./Screenshots");
 		FileUtils.copyFile(src, trg);
 	}
+	
+	
+	public void mergeConflictUser1() {
+		System.out.println("merge conflict by user 1");
+		System.out.println("--------------------------");
+	}
 }
 //checking for git commit
